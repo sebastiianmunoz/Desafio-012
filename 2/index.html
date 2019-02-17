@@ -1,0 +1,101 @@
+<!-- Crear una galería de imágenes
+
+Todas las imágenes deben estar desaturada (en blanco y negro)
+ver: https://stackoverflow.com/questions/22994810/how-do-i-desaturate-and-saturate-an-image-using-css
+
+Al hacer click sobre la imágen esta debe recuperar su color con una transición
+de un segundo, al volver hacer click debe volver a estar en blanco y negro.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    .img2 {
+      filter: url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: gray;
+      transition: width 12s;
+    }
+    #gallery {
+  margin: 2em auto;
+  max-width: 38%;
+  display: flex;
+}
+
+#gallery figure {
+  margin: 0 1.5%;
+  width: 30.33333%;
+}
+
+#gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+#gallery figcaption {
+   margin: 1em 0;
+  text-align: center;
+}
+    /* .img3 {
+      filter: none;
+      cursor: pointer;
+    } */
+  </style>
+</head>
+
+
+<body>
+<!-- 
+    <div id="gallery">
+        <figure><img src="http://lorempixel.com/400/200/animals/" alt=""><figcaption></figcaption></figure>
+        <figure><img src="http://lorempixel.com/400/200/city/" alt=""><figcaption></figcaption></figure>
+        <figure><img src="http://lorempixel.com/400/200/people/" alt=""><figcaption></figcaption></figure>
+      </div>   -->
+
+
+  <img id="foto" src="https://imagizer.imageshack.us/v2/350x496q90/822/z7ds.jpg" />
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>  
+
+
+// $("img").click(function() {
+// $("img").on("click",function(){
+//   //  if ($("#foto").addClass("img2")){
+//   // alert("con clase")
+//   // $("#foto").renoveClass("img2");
+//   //  }else{
+//   // //   $("img").renoveClass("img3");
+//   // // $("img").addClass("img2");
+//   // alert("sin clase")
+//   $("#foto").toggleClass("img2");
+//   // }
+ 
+//  })
+
+
+$("img").on("click",function(){
+  //  if ($("#foto").addClass("img2")){
+  // alert("con clase")
+  // $("#foto").renoveClass("img2");
+  //  }else{
+  // //   $("img").renoveClass("img3");
+  // // $("img").addClass("img2");
+  // alert("sin clase")
+  $(this).toggleClass("img2");
+  // }
+ 
+ })
+</script>
+
+</html>

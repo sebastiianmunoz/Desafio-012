@@ -1,0 +1,92 @@
+<!-- En una página con muchas imágenes mostrar una alerta cuando esté
+cargado el DOM y otra después que las imágenes se hayan cargado.
+
+Tip: Investigar el evento window.onload
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+  <img src="http://placeimg.com/1640/1480/any" alt="">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+
+
+// $(function() {
+// $( "img", "#gallery" ).on( "contextmenu", function( e ) {
+//     e.preventDefault();
+//     alert("no pueda guardar la imagen en su computador,sin el consentimiento del autor")
+// });
+// });
+
+   $(function() {
+alert( "Imagenes aún no cargadas" );
+});
+
+$( window ).on( "load", function() {
+  alert( "Imagenes cargadas" );
+});
+    </script>
+  </body>
+</html>
